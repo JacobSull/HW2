@@ -1,0 +1,87 @@
+header, nav, footer, content {
+    display: block;  /*sets theses to display as a block element, starting on a new line and taking up the entire width */
+}
+body { 
+    background-image: url("ptrbackground.jpg"); 
+    background-repeat: repeat-x; /* background image is needed to be repeated along x in order to take up the whole page */
+    background-color: #00569f; /* underneath the background, this color will fill the rest */
+    color: #666666; /* text color */
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+    overflow: hidden; /* used for making nav bar and content line up */
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    min-width: 600px; /* min shrinking size */
+    position: relative; /* position relative to page */
+}
+Header { /*sets background image and color extending to the left of it */
+    background-image: url("sunset.jpg");
+    background-position: right;
+    background-repeat: no-repeat; /* only need one background image on right of header */
+    background-color: #000033;
+    text-align: left;
+    color: white;
+}
+h1,h2,footer { /* sets font for header and footer */
+    font-family: Georgia, "Times New Roman", serif;
+}
+h1 { /* sets margin and padding for Pacific Trails Report */ 
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 10px;
+}
+h2 { /* sets Enjoy Nature in Luxury color */
+    color: #3399CC;
+}
+footer { /* sets font and margins for footer */
+    font-size: smaller;
+    margin-left: 220px;
+    margin-bottom: 30px;
+}
+nav {
+    text-align: left;
+    background-color: #95C5E3;
+    padding-right: 65px;
+    position: absolute; /* allows nav bar to stay in place */
+    height: 100%; /* allows nav bar to extend downward */
+}
+nav ul { /* sets format of nav bar, removing bullet points */
+    font-size: 1.2em;
+    list-style-type: none;
+    font-weight: bold;
+    padding-left: 20%;
+}
+nav a:link { /* sets color and removing underlining of nav bar links*/
+    text-decoration: none;
+    color:#000033;
+}
+nav a:visited { /* set color of link that has been visited */
+    color: #344873;
+}
+nav a:hover { /* set color of link that has been hovered over */
+    color: #FFFFFF;
+}
+#contact { /* sets contact info to be smaller than rest of text */
+    font-size: 90%;
+}
+#content {
+    text-align: left; /* align on left side of wrapper */
+    position: relative; /* relate to the wrapper */
+    margin-left: 220px; /* used to away from nav bar */
+}
+#content img {
+    margin-right: 2%;
+    float: left; /* used to allow text to move around the image depending on browser size */
+}
+#content ul {
+    list-style-image: url("marker.gif"); /* used to get the special bullets */
+    list-style-position: inside; /* used to get bullets to line up with text */
+}
+.resort { /* font of the "Pacific Trails Report" found in content*/
+    font-size: large;
+    font-weight: bold;
+    color: #6B789D;
+}
